@@ -1,0 +1,12 @@
+version: "2.4"
+services:
+  spark:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    command: start.sh jupyter lab --LabApp.token=''
+    ports: 
+      - "8888:8888"
+    volumes:
+      - ./data:/data
+      - ./delta:/home/jovyan/work
