@@ -10,7 +10,6 @@ Most relevant (quite subjective):
 * Time travel: being able to go back before updates / deletes (for example if updated data are faulty)
 
 
-
 When time travel does make sense:
 * We have a table with updates / appends / deletions of rows.
 * We are only interested in the most recent data, i.e. if a row is updated, the old value is not of interest any more.
